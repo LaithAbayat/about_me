@@ -96,11 +96,15 @@ for( let i=0; i<=3; i++){
 }
 
 let favMovie = ['Scarface', 'The Godfather','V For Vendetta','The Hobbit','Lord of the rings'];
-favMovie = prompt('Guess my favorite movie from this list: Scarface, The Godfather, V For Vendetta, The Hobbit, Lord of the rings, The First Time !');
-
-while(favMovie !== 'Scarface'){
-  favMovie = prompt('Wrong guess :( try again .. '+'  Guess my favorite movie from this list: Scarface, The Godfather, V For Vendetta, The Hobbit, Lord of the rings, The First Time !');
+for(let i=0; i<6; i++){
+  let uAnswer = prompt('Guess my favorite movie!');
+  for(let j=0; j<favMovie.length; j++){
+    while(uAnswer===favMovie[j]){
+      uAnswer = prompt('Correct Answer!');
+    }
+  }
 }
+
 
 {
 
