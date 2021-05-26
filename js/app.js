@@ -78,6 +78,23 @@ default:
   alert('Next time plz type yes or no');
 }
 
+for( let i=0; i<=3; i++){
+  let guess= prompt('Pick a number from 1-50');
+  guess=Number(guess);
+  if(guess === 27){
+    score++;
+    alert('Correct answer');
+    break;
+  }else if(guess < 20){
+    alert('too low!');
+  }else if(guess>25){
+    alert('too high!');
+  }
+  if(i===3){
+    alert('Sorry you lost!');
+  }
+}
+
 let favMovie = ['Scarface', 'The Godfather','V For Vendetta','The Hobbit','Lord of the rings'];
 favMovie = prompt('Guess my favorite movie from this list: Scarface, The Godfather, V For Vendetta, The Hobbit, Lord of the rings, The First Time !');
 
