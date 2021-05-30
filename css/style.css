@@ -1,0 +1,30 @@
+body {
+
+  background-color: #fdecfd; 
+ 
+
+}
+
+header {
+  width: 100%;
+}
+
+footer {
+
+  background-color: #320d77 ;
+  min-height: 10vh;
+  display: flex;
+}
+
+main {
+
+  margin-bottom:20% ;
+
+}
+
+ol li {
+
+  color: white;
+  margin-top: 10px;
+
+}
